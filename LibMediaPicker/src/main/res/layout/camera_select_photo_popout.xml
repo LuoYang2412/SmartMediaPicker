@@ -2,28 +2,53 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#9B9B9B"
-    android:orientation="vertical">
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingStart="13dp"
+    android:paddingEnd="13dp">
 
-    <ImageView
-        android:id="@+id/iv_take_photo"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        android:src="@drawable/take_photo" />
+        android:background="@drawable/bg_select_photo_popout"
+        android:orientation="vertical">
 
-    <ImageView
-        android:id="@+id/iv_pick_photo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        android:src="@drawable/pick_photo" />
+        <TextView
+            android:id="@+id/iv_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="拍摄"
+            android:textColor="#34363A"
+            android:textSize="18sp" />
 
-    <ImageView
-        android:layout_marginTop="6dp"
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:background="#DFDFDF" />
+
+        <TextView
+            android:id="@+id/iv_pick_photo"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:gravity="center"
+            android:text="从手机相册选择"
+            android:textColor="#34363A"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
         android:id="@+id/iv_cancel"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scaleType="fitXY"
-        android:src="@drawable/cancel_photo" />
+        android:layout_height="56dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginBottom="34dp"
+        android:background="@drawable/bg_select_photo_popout"
+        android:gravity="center"
+        android:text="取消"
+        android:textColor="#4B4B4B"
+        android:textSize="18sp" />
 </LinearLayout>

@@ -15,7 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ImageView;
+import android.widget.TextView;
 
 import java.lang.ref.WeakReference;
 
@@ -32,9 +32,9 @@ import me.bzcoder.mediapicker.photopicker.PhotoPickUtils;
  */
 public class CameraDialogFragment extends DialogFragment {
 
-    private ImageView ivTakePhoto;
-    private ImageView ivPickPhoto;
-    private ImageView ivCancel;
+    private TextView ivTakePhoto;
+    private TextView ivPickPhoto;
+    private TextView ivCancel;
     private MediaPickerConfig config;
     private WeakReference<Fragment> fragment;
     private WeakReference<FragmentActivity> fragmentActivity;
